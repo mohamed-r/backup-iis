@@ -1,0 +1,143 @@
+#========================
+# Interface configuration
+#========================
+pushd interface 
+
+
+popd
+# End of interface configuration
+
+
+
+# ----------------------------------
+# IPHTTPS Configuration
+# ----------------------------------
+pushd interface httpstunnel
+
+reset
+
+
+popd
+# End of IPHTTPS configuration
+
+
+
+# ----------------------------------
+# IPv4 Configuration
+# ----------------------------------
+pushd interface ipv4
+
+reset
+set global icmpredirects=enabled
+
+
+popd
+# End of IPv4 configuration
+
+
+
+# ----------------------------------
+# IPv6 Configuration
+# ----------------------------------
+pushd interface ipv6
+
+reset
+
+
+popd
+# End of IPv6 configuration
+
+
+
+# ----------------------------------
+# ISATAP Configuration
+# ----------------------------------
+pushd interface isatap
+
+
+
+popd
+# End of ISATAP configuration
+
+
+
+# ----------------------------------
+# 6to4 Configuration
+# ----------------------------------
+pushd interface 6to4
+
+reset
+
+
+
+popd
+# End of 6to4 configuration
+
+
+
+# ----------------------------------
+# ISATAP Configuration
+# ----------------------------------
+pushd interface isatap
+
+
+
+popd
+# End of ISATAP configuration
+
+
+#========================
+# Port Proxy configuration
+#========================
+pushd interface portproxy
+
+reset
+
+
+popd
+
+# End of Port Proxy configuration
+
+
+
+# ----------------------------------
+# TCP Configuration
+# ----------------------------------
+pushd interface tcp
+
+reset
+
+set global rss=enabled chimney=automatic autotuninglevel=normal congestionprovider=none ecncapability=disabled timestamps=disabled netdma=enabled dca=enabled
+
+
+popd
+# End of TCP configuration
+
+
+
+# ----------------------------------
+# Teredo Configuration
+# ----------------------------------
+pushd interface teredo
+set state type=client servername=teredo.ipv6.microsoft.com. servervirtualip=0.0.0.0
+
+
+
+popd
+# End of Teredo configuration
+
+
+
+# ----------------------------------
+# 6to4 Configuration
+# ----------------------------------
+pushd interface 6to4
+
+reset
+
+
+
+popd
+# End of 6to4 configuration
+
+
