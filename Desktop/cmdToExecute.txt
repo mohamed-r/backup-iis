@@ -1,0 +1,3 @@
+xcopy /Y /S /E /V 2011-06-23-Complete\inetpub \\VIRTUAL-CRIQUET\C$\inetpub
+
+netsh exec 2011-06-23-Complete\Network\network-configuration.txt
