@@ -29,5 +29,4 @@ echo #####################################
 echo .
 echo .
 pushd !rootPath!
-..\Git\cmd\git.cmd pull ./
-popd
+..\Git\cmd\git.cmd pull ./ && popd

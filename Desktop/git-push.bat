@@ -29,5 +29,4 @@ echo #####################################################
 echo .
 echo .
 pushd !rootPath!
-..\Git\cmd\git.cmd add ./ && ..\Git\cmd\git.cmd commit -am "Backup %DATE%" && ..\Git\cmd\git.cmd push origin master
-popd
+..\Git\cmd\git.cmd add ./ && ..\Git\cmd\git.cmd commit -am "Backup %DATE%" && ..\Git\cmd\git.cmd push && popd
