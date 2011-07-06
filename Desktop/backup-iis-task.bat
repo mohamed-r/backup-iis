@@ -110,14 +110,6 @@ set error="Copy of IIS Configuration Failed"
 )
 )
 
-echo .
-echo .
-echo #####################################################
-echo #                  == Git Push ==                   #
-echo #####################################################
-echo .
-echo .
-"C:/Program Files/Git/cmd/git.cmd" add ./ && "C:/Program Files/Git/cmd/git.cmd" commit -am "Backup %DATE%" && "C:/Program Files/Git/cmd/git.cmd" push origin master
 
 
 echo .
